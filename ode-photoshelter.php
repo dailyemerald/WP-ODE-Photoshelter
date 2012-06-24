@@ -25,7 +25,7 @@ function odephotoshelter($atts, $content=null) {
 	$images = $json->images;
 	foreach ($images as $key => $image) {
 		$ret = $ret . "<div class='ps-image'>";
-		$ret = $ret . "<img src=\"" . $image->src . $imageSuffix ."\n></img>";
+		$ret = $ret . "<img src=\"" . $image->src . $imageSuffix ."\"></img>";
 		$ret = $ret . "<p class='ps-caption'>" . $image->caption . "</p>";
 		$ret = $ret . "</div>";
 	}
